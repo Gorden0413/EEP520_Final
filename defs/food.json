@@ -1,0 +1,19 @@
+{
+  "name": "food",
+  "type": "static",
+  "description": "Food for the snake to eat",
+  "shape": [
+      { "x": -10, "y": 10 },
+      { "x": 10, "y": 10 },
+      { "x": 10, "y": -10 },
+      { "x": -10, "y": -10 }
+  ],
+  "friction": {
+      "collision": 0,
+      "linear": 0,
+      "rotational": 0
+  },
+  "sensors": [],
+  "mass": 0,
+  "controller": "lib/food.so"
+}

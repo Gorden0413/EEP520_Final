@@ -1,0 +1,187 @@
+{
+  "name": "Snake Game",
+  "ip": "0.0.0.0",
+  "port": 8765,
+  "agents": [
+      {
+        "definition": "defs/snake_segment.json",
+        "position": {
+          "label": "snake_segment_0",
+          "theta": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fill": "green",
+          "stroke": "black"
+        },
+        "label": "Time: 10s\nScore: 0",
+        "label_x": 0,
+        "label_y": -20
+      },
+      {
+        "definition": "defs/snake_segment.json",
+        "position": {
+          "label": "snake_segment_1",
+          "theta": 0,
+          "x": -20,
+          "y": 0
+        },
+        "style": {
+          "fill": "green",
+          "stroke": "black"
+        }
+      },
+      {
+        "definition": "defs/food.json",
+        "position": {
+          "label": "food_1",
+          "theta": 0,
+          "x": 100,
+          "y": 0
+        },
+        "style": {
+          "fill": "red",
+          "stroke": "black"
+        }
+      },
+      {
+        "definition": "defs/food.json",
+        "position": {
+          "label": "food_2",
+          "theta": 0,
+          "x": -100,
+          "y": 100
+        },
+        "style": {
+          "fill": "red",
+          "stroke": "black"
+        }
+      },
+      {
+        "definition": "defs/food.json",
+        "position": {
+          "label": "food_3",
+          "theta": 0,
+          "x": 200,
+          "y": -200
+        },
+        "style": {
+          "fill": "red",
+          "stroke": "black"
+        }
+      },
+      {
+        "definition": "defs/food.json",
+        "position": {
+          "label": "food_4",
+          "theta": 0,
+          "x": -200,
+          "y": -100
+        },
+        "style": {
+          "fill": "red",
+          "stroke": "black"
+        }
+      },
+      {
+        "definition": "defs/food.json",
+        "position": {
+          "label": "food_5",
+          "theta": 0,
+          "x": 150,
+          "y": 150
+        },
+        "style": {
+          "fill": "red",
+          "stroke": "black"
+        }
+      }
+  ],
+  "statics": [
+      {
+        "shape": [
+          { "x": -600, "y": 450 },
+          { "x": 600, "y": 450 },
+          { "x": 600, "y": 435 },
+          { "x": -600, "y": 435 },
+          { "x": -600, "y": 450 }
+        ],
+        "type": "static",
+        "position": {
+          "label": "boundary_top",
+          "theta": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fill": "none",
+          "stroke": "black",
+          "stroke-width": 10
+        }
+      },
+      {
+        "shape": [
+          { "x": -600, "y": -450 },
+          { "x": 600, "y": -450 },
+          { "x": 600, "y": -435 },
+          { "x": -600, "y": -435 },
+          { "x": -600, "y": -450 }
+        ],
+        "type": "static",
+        "position": {
+          "label": "boundary_bottom",
+          "theta": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fill": "none",
+          "stroke": "black",
+          "stroke-width": 10
+        }
+      },
+      {
+        "shape": [
+          { "x": -600, "y": -450 },
+          { "x": -585, "y": -450 },
+          { "x": -585, "y": 450 },
+          { "x": -600, "y": 450 },
+          { "x": -600, "y": -450 }
+        ],
+        "type": "static",
+        "position": {
+          "label": "boundary_left",
+          "theta": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fill": "none",
+          "stroke": "black",
+          "stroke-width": 10
+        }
+      },
+      {
+        "shape": [
+          { "x": 600, "y": -450 },
+          { "x": 585, "y": -450 },
+          { "x": 585, "y": 450 },
+          { "x": 600, "y": 450 },
+          { "x": 600, "y": -450 }
+        ],
+        "type": "static",
+        "position": {
+          "label": "boundary_right",
+          "theta": 0,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "fill": "none",
+          "stroke": "black",
+          "stroke-width": 10
+        }
+      }
+  ]
+}
